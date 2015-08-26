@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:Email="http://www.w3.org/1999/xhtml"
+      xmlns:max="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=
+    1.0>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    <!--[if lt IE 9]>
+    <![endif]-->    <title>Reservation</title>
+</head>
+<body>
+
+
+<h1>Continental Cuisine Restaurant</h1>
+<img src="http://www.restaurants.co.za/images/gallery/full/le-si_restaurant_17.jpg">
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a>
+        <li><a href="#contact ">Contact</a></li>
+        <li><a href="#reservation ">Reservation</a></li>
+    </ul>
+</nav>
+
+
+<br><div id="home">
+    <h2>About Us</h2>
+    Cooper began his culinary career at the age of 15 where he worked at the Earls Restaurant franchise.
+    He started as a dishwasher, and then worked his way up to a Day Coach. After 6 years with the successful
+    restaurant chain, Cooper attended the Pacific Institute of Culinary Arts, right at the entrance of Texas’s
+    famous Granville Island. After graduation, Cooper went on to work in some of Texas's top restaurants
+    such as: Cin Cin and Hotel Texas. After completing his Red Seal certification,Cooper ventured to Chiang Mai,
+    Thailand to further his knowledge of the culinary arts overseas. A traveller at heart, he worked his way to the
+    tropical islands of Whitsunday Islands in the heart of the Great Barrier Reef in Queensland Australia. After
+    several years of culinary adventures, Cooper got married and moved to Chicago with his wife. For the next
+    3 years, he worked at Truffles Inspired Catering, Victoria's largest and best catering establishment.
+    Working in all 3 of their locations, Cooper played a significant leadership part as a Sous Chef to help grow their
+    business through leading quality and consistency. After 4 years on Texas Island, he moved back to the
+    mainland and helped open Lakeside Beach Club at Cultus Lake. Cooper brings his strong foundation in classic
+    cooking and Italian inspired cuisine to the Sandbar Seafood Restaurant. We are ecstatic to have Chef Cooper
+    Green join our team of sous chefs and managers.
+    </li>
+</div></section>
+
+<br><br>
+<h4 id="menu">
+    <h2>Menu</h2>
+    Salmon Ravioli...............................................................................7.95<br>
+
+    Fried Calamari............................................................................8.95<br>
+
+    Almond Prawn Cocktail........................................................................  7.95<br>
+
+    Bruschetta........................................................................................5.25<br>
+
+    Margherita Pizza..................................................................................10.95<br>
+
+</h4>
+
+<br>
+<br><br>
+<fieldset><h2>Book Your Table</h2><h4 id="reservation">
+
+    <legend>Personal Details:</legend><br>
+    <form action="reservation_details.html " method="GET">
+        <div class="col-md-12">
+            <div class="md-col-4"><label for="name">Name:</label><input type="text " name="username" id="name" required placeholder="Your name" ></div>
+            <div class="md-col-4"><label for="email">Email:</label><input type="text " name="useremail" id="email" required placeholder=" abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></div>
+            <div class="md-col-4"><label for="phone">Phone:</label><input type="tel " name="userphone" id="phone" required placeholder="915-657-8596" pattern="\d{3}[\-]\d{3}[\-]\d{4}"></div>
+
+        </div>
+        <br><br>
+        <legend>Booking Details</legend><br>
+        <div class="md-col-12">
+            <div class="md-col-4"><label for="numberofguests">Guests:</label><input type="number" name="numberofGuests" min="1" placeholder="Number of Guests"required></div>
+            <div class="md-col-4"><label for="date">Date:</label><input type="date" id="myDate" min="2015-08-25" required  ></div>
+            <div class="md-col-4">Time<select name="time">
+                <option value="10:30 am">10:30am</option>
+                <option value="11:30 am">11:30am</option>
+                <option value="12:30 am">12:30pm</option>
+                <option value="1:30 pm"> 1:30pm</option>
+                <option value="2:30 pm"> 2:30pm</option>
+                <option value="3:30 pm"> 3:30pm</option>
+                <option value="4:30 pm"> 4:30p</option>
+                <option value="5:30 pm"> 5:30pm</option>
+                <option value="6:30 pm"> 6:30pm</option>
+                <option value="7:30 pm"> 7:30pm</option>
+                <option value="8:30pm"> 8:30pm</option>
+                <option value="9:30pm"> 9:30pm</option>
+                <option value="10:30pm"> 10:30pm</option>
+                <option value="11:30pm"> 11:30pm</option></select></div>
+            <label for="submit">Number of Guests</label><input type="submit"  id="submit"name="submit" value="Submit">
+        </div>
+</fieldset>
+</form>
+</h4>
+<br><br>
+<div id="contact">Owner:Kashyap Mukkamala
+    Address:215,Via De Arboles,Texas.
+    Phone:(915)458-5897</div>
+
+</h2><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    div {
+        resize: both;
+        overflow: auto;
+    }
+
+    #lunch{resize: both;
+        overflow: auto;}
+    #dinner{resize: both;
+        overflow: auto;}
+
+    img{
+        width:100%;max-height:350px;}
+    #reservation{resize: both;
+        overflow: auto;}
+
+
+    nav ul ul {
+        display: none;
+    }
+
+    nav ul li:hover > ul {
+        display: block;
+    }nav ul {
+         background: lightgray;
+         background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+         background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+         background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
+         box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+         padding: 20px;
+         border-radius: 75%;
+         list-style: none;
+         position: relative;
+         display: inline-table;
+     }#home{text-align: justify;}
+    #reservation{ background-color:lightgray;}
+    #contact{justify-content:space-between;
+        height:100px;width:300px;padding-top: 1.5%;
+        background:-webkit-linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);
+        background:-o-linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);
+        background:-moz-linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);
+        background:linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);text-align: center;
+    }
+    nav ul:after {
+        content: ""; clear: both; display: block;
+    }nav ul li {
+         float: left;
+     }
+    nav ul li:hover {
+        background: #4b545f;
+        background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+        background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+        background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+    }
+    nav ul li:hover a {
+        color: #fff;
+    }
+    nav ul li a {
+        display: block; padding: 25px 40px;
+        color: #757575; text-decoration: none;
+    }nav ul ul {
+    .a1{margin-right :20%;}
+    h2{
+        text-align: center;
+    }
+    .rad{
+        height:100px;width:300px;text-align:left;padding-top: 1.5%;
+        background:-ms-linear-gradient(left, red, orange, yellow, green, brown, indigo, violet);
+        background:-webkit-linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);
+        background:-o-linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);
+        background:-moz-linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);
+        background:linear-gradient(left,red,orange,yellow,green,brown,indigo,violet);
+    }</style>
+
+</body>
+</html>
